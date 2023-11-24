@@ -11,11 +11,11 @@ function CocktailsRandomPage () {
     // lorsque cette varibale aura récupèrer les données la fonction async ne sera plus actionnée."
     
 
-    // use effect est une fonction que react me fournit
+    // "useEffect" est une fonction Hook (commence par "use") que react me fournit
     // et qui permet d'executer du code uniquement à certains
-    // chargements du composant
+    // chargements du composant, ici au premier chargement : 
     // ici, vu qu'on place un tableau vide au deuxième paramètre
-    // de useeEffet
+    // de useEffet (ce qui est le cas quasiment tout le temps)
     // ça signifie qu'on peut executer la fonction une seule fois
     // au premier composant du chargement
 
@@ -29,7 +29,7 @@ function CocktailsRandomPage () {
                 // l'appel de cette fonction recharge le composant
                 setCocktailRandom(cocktailsJs.drinks[0]);
             })();
-       }, []);
+       }, []); // entre crochet il s'agit du paramètre de useEffect, en l'occurrence d'un tableau vide.
  
  
                  // fonction eventListener qui est actionnée à l'appel du bouton: le composants est rechargé

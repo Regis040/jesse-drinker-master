@@ -42,16 +42,19 @@ body {
 }
 
 h2, h4 {
-  margin:2rem;
+  margin:1rem;
 }
 
-.coktails_position {
+.coktail_position {
   display: flex;
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
-  height: 300px;  
+  width: 300px;  
+  
   margin: 2rem;
   border: 10px solid darkblue;
   box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
@@ -60,4 +63,21 @@ img {
 }
 
 
+.divstyle {
+  position: relative;
+}
 
+button {
+  position: absolute;
+  top: 130px;
+  left: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: brown;
+  font-style: normal;
+  font-weight: 800;
+  box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+
+}

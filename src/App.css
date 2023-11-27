@@ -87,6 +87,10 @@ button {
   width: 500px;
   text-align: center;
   margin: auto;
+  border: 20px solid darkblue;
+  box-shadow: -59px 42px 39px 0px rgba(0,0,0,0.7);
+  -webkit-box-shadow: -59px 42px 39px 0px rgba(0,0,0,0.7);
+  -moz-box-shadow: -59px 42px 39px 0px rgba(0,0,0,0.7);
 }
 
 /* .joie-boisdemai {

@@ -35,17 +35,18 @@ function CategoriesPage (){
         ce qui est le cas  au premier rendu du composant*/}           
                 {categories ? (
                 <div class="categories-style">
+                    <h1>Les catégories de cocktails</h1>
                    {categories.map ((category) => {
                     return (
                         <article>
-                            <h2>{category.strCategory}</h2>
+                            <h3>{category.strCategory}</h3>
                         </article>
                     );
                    })}                                       
                 </div>
         ) : (
             <p>
-                Cocktail en cours de présentation
+               Catégories coming soon 
             </p>
         )}
         </main>

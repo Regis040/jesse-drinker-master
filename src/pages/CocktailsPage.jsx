@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { Link } from 'react-router-dom';
 
 function CocktailsPage () {
 
@@ -58,9 +59,8 @@ function CocktailsPage () {
                             <img alt={cocktail.strDrink} src={cocktail.strDrinkThumb}/>
                             
                                 <h2>{cocktail.strDrink}</h2>
-                                 <h4>fait avec {cocktail.strIngredient1}, {cocktail.strIngredient2}, {cocktail.strIngredient3}, {cocktail.strIngredient4}</h4>
-                            
-                         
+                                <h4>fait avec {cocktail.strIngredient1}, {cocktail.strIngredient2}, {cocktail.strIngredient3}, {cocktail.strIngredient4}</h4>
+                                <Link to={`/cocktails/details/${cocktail.idDrink}`}>Voir les détails</Link>                         
                     </article>
                     );
                 })}

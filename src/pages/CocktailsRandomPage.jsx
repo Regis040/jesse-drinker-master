@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Header from '../components/Header'
 
 function CocktailsRandomPage () {
 
@@ -44,6 +45,7 @@ function CocktailsRandomPage () {
                     };
     return (
        <main>
+        <Header />
         {/* Si les données sont bien présentes dans la donnée d'état, alors on affiche le cocktail sinon on affiche que les données sont en cours de traitement 
         ce qui est le cas  au premier rendu du composant*/}
         {cocktailRandom ? (

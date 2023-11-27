@@ -1,5 +1,7 @@
 import {useState} from 'react'
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+import CocktailsCard from '../components/CocktailsCard';
 
 function CocktailsPage () {
 
@@ -47,23 +49,17 @@ function CocktailsPage () {
     }
     return (
         <main>
+            <Header />
             {cocktails ? (
             <>
-            <h1>Mes cocktails préférés</h1>
-            {/* Je veux récupérer le nom des cocktails */}
-            {/* Je parcours mes données recuillies dans le tableau */}
-                {cocktails.map((cocktail) => {
-                    return (
-                    <article class="coktails_position">
-                        {/* j'affiche le nom des cocktails compris dans ce tableau */}
-                            <img alt={cocktail.strDrink} src={cocktail.strDrinkThumb}/>
-                            
-                                <h2>{cocktail.strDrink}</h2>
-                                <h4>fait avec {cocktail.strIngredient1}, {cocktail.strIngredient2}, {cocktail.strIngredient3}, {cocktail.strIngredient4}</h4>
-                                <Link to={`/cocktails/details/${cocktail.idDrink}`}>Voir les détails</Link>                         
-                    </article>
-                    );
-                })}
+                <h1>Mes cocktails préférés</h1>
+                {/* Je veux récupérer le nom des cocktails */}
+                {/* Je parcours mes données recuillies dans le tableau */}
+                    {cocktails.map((cocktail) => {
+                        return (
+                            <CocktailsCard cocktailToDisplay={cocktail}/>
+                        );
+                    })}
             </>
             ) : (
                 <p>

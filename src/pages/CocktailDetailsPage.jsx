@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Header from '../components/Header'
 
 
 function CocktailDetailsPage () {
@@ -18,7 +19,8 @@ function CocktailDetailsPage () {
     }, []);
 
     return (
-        <main>           
+        <main>   
+            <Header />        
             {cocktails ? (
                 <section>                                      
                     <article>

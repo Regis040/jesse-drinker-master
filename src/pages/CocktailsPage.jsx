@@ -57,7 +57,9 @@ function CocktailsPage () {
                 {/* Je parcours mes données recuillies dans le tableau */}
                     {cocktails.map((cocktail) => {
                         return (
-                            <CocktailsCard cocktailToDisplay={cocktail}/>
+                            <>
+                            <CocktailsCard cocktailToDisplay={cocktail}/>                              
+                            </>
                         );
                     })}
             </>

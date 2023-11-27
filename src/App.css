@@ -67,11 +67,11 @@ img {
   position: relative;
 }
 
-button {
+/* button {
   position: absolute;
   top: 130px;
   left: 400px;
-  padding: 10px;
+  padding: 10px;j
   border-radius: 10px;
   background-color: brown;
   font-style: normal;
@@ -80,7 +80,7 @@ button {
   -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
 
-}
+} */
 
 .categories-style {
   background-color: aqua;
